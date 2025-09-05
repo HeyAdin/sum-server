@@ -15,16 +15,6 @@ app.get('/sum', (req, res) => {
     }
 })
 
-app.get('/', (req, res) => {
-    try {
-        res.status(200).json({ msg : "hello from the bengaluru data is coming from the american free machine that the dev has initialized on aws" });
-    }
-    catch(e){
-        console.log(e);
-        res.status(400).json({msg : "something went wrong"});
-    }
-})
-
 app.listen(port, () => {
     console.log("server started at port ", port);
 })
